@@ -111,7 +111,10 @@ export default function HomePage() {
             </AnimatedSection>
 
             <AnimatedSection animation="fadeInUp" delay={200}>
-              <p className="text-xl md:text-2xl text-gray-700 mb-8">The Based Fox Taking Crypto to the Moon 🚀</p>
+              <p className="text-xl md:text-2xl text-gray-700 mb-8">
+                The Based Fox Taking Crypto to the Moon 🚀<br />
+                Mine Free Tokens Every 24 Hours!
+              </p>
             </AnimatedSection>
 
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
@@ -130,10 +133,11 @@ export default function HomePage() {
 
               <AnimatedSection animation="fadeInRight" delay={600}>
                 <div className="text-left space-y-6">
-                  <h3 className="text-3xl font-bold text-orange-600">Ready for the Ride?</h3>
+                  <h3 className="text-3xl font-bold text-orange-600">Ready to Mine & Ride?</h3>
                   <p className="text-lg text-gray-600">
-                    Rudi isn't just another meme token - he's your guide to the Based ecosystem. With his orange hoodie
-                    and determined spirit, he's driving the community towards financial freedom on Base Network.
+                    Rudi isn't just another meme token - he's your guide to the Based ecosystem! Start mining free
+                    $GOODRUDI tokens every 24 hours while Rudi drives the community towards financial freedom on Base
+                    Network. No investment needed, just pure mining rewards!
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Button
@@ -361,7 +365,9 @@ export default function HomePage() {
           </AnimatedSection>
 
           <AnimatedSection animation="fadeInUp" delay={200}>
-            <p className="text-orange-100 mb-6">Join Rudi on his journey to revolutionize the Base ecosystem</p>
+            <p className="text-orange-100 mb-6">
+              Join Rudi on his journey to revolutionize the Base ecosystem - Mine free tokens daily!
+            </p>
           </AnimatedSection>
 
           <AnimatedSection animation="fadeInUp" delay={400}>
