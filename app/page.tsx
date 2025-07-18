@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Copy, ExternalLink, TrendingUp, Users, Zap, Shield, ChevronDown, Rocket, Heart, Star } from "lucide-react"
+import { ExternalLink, TrendingUp, Users, Zap, Shield, ChevronDown, Rocket, Heart, Star } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 import { FloatingElements } from "@/components/floating-elements"
 import { LoadingScreen } from "@/components/loading-screen"
@@ -299,30 +299,40 @@ export default function HomePage() {
           <AnimatedSection animation="scaleIn" delay={200}>
             <Card className="max-w-2xl mx-auto border-orange-200 hover:shadow-xl transition-all duration-300">
               <CardContent className="p-6">
-                <div className="flex items-center justify-between bg-gradient-to-r from-gray-50 to-orange-50 rounded-lg p-4 hover:from-orange-50 hover:to-orange-100 transition-all duration-300">
-                  <code className="text-sm font-mono text-gray-700 break-all">{contractAddress}</code>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    onClick={copyToClipboard}
-                    className={`ml-4 border-orange-500 text-orange-600 hover:bg-orange-50 bg-transparent transform hover:scale-105 transition-all duration-200 ${
-                      copied ? "bg-green-50 border-green-500 text-green-600" : ""
-                    }`}
-                  >
-                    {copied ? "Copied!" : <Copy className="h-4 w-4" />}
-                  </Button>
+                <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-lg p-8 text-center">
+                  <div className="text-6xl mb-4">🚀</div>
+                  <h4 className="text-3xl font-bold text-orange-600 mb-4">Coming Soon!</h4>
+                  <p className="text-lg text-gray-600 mb-6">
+                    The $GOODRUDI contract is being finalized and will be deployed on Base Network soon.
+                  </p>
+                  <div className="flex justify-center space-x-2 mb-4">
+                    <div className="w-3 h-3 bg-orange-400 rounded-full animate-bounce"></div>
+                    <div
+                      className="w-3 h-3 bg-orange-400 rounded-full animate-bounce"
+                      style={{ animationDelay: "0.1s" }}
+                    ></div>
+                    <div
+                      className="w-3 h-3 bg-orange-400 rounded-full animate-bounce"
+                      style={{ animationDelay: "0.2s" }}
+                    ></div>
+                  </div>
+                  <p className="text-sm text-orange-500 font-semibold">Stay tuned for the official launch!</p>
                 </div>
                 <div className="flex justify-center space-x-4 mt-6">
-                  <Button className="bg-orange-500 hover:bg-orange-600 text-white transform hover:scale-105 transition-all duration-200 hover:shadow-lg group">
-                    <ExternalLink className="mr-2 h-4 w-4 group-hover:animate-pulse" />
-                    View on BaseScan
+                  <Button
+                    className="bg-orange-500 hover:bg-orange-600 text-white transform hover:scale-105 transition-all duration-200 hover:shadow-lg group"
+                    disabled
+                  >
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    BaseScan (Soon)
                   </Button>
                   <Button
                     variant="outline"
                     className="border-blue-500 text-blue-600 hover:bg-blue-50 bg-transparent transform hover:scale-105 transition-all duration-200 group"
+                    disabled
                   >
-                    <TrendingUp className="mr-2 h-4 w-4 group-hover:animate-bounce" />
-                    DexScreener
+                    <TrendingUp className="mr-2 h-4 w-4" />
+                    DexScreener (Soon)
                   </Button>
                 </div>
               </CardContent>
@@ -368,19 +378,13 @@ export default function HomePage() {
               >
                 Telegram
               </Button>
-              <Button
-                variant="ghost"
-                className="text-white hover:bg-orange-700 transform hover:scale-105 transition-all duration-200"
-              >
-                Discord
-              </Button>
             </div>
           </AnimatedSection>
 
           <AnimatedSection animation="fadeInUp" delay={600}>
             <div className="mt-8 pt-8 border-t border-orange-500">
               <p className="text-orange-200 text-sm">
-                © 2024 Based Good Rudi. Built on Base Network.
+                © 2025 Based Good Rudi. Built on Base Network.
                 <br />
                 <span className="text-xs">This is a meme token for entertainment purposes. Always DYOR.</span>
               </p>
