@@ -44,12 +44,12 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-100 overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 overflow-x-hidden">
       <FloatingElements />
 
       {/* Header */}
       <header
-        className={`border-b border-orange-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300 ${
+        className={`border-b border-blue-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300 ${
           scrollY > 50 ? "shadow-lg" : ""
         } ${isLoaded ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}
       >
@@ -67,13 +67,13 @@ export default function HomePage() {
                 height={50}
                 className="rounded-full transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
               />
-              <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-orange-600 hover:text-orange-700 transition-colors cursor-pointer">
+              <h1 className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors cursor-pointer">
                 Based Good Rudi
               </h1>
-              <p className="text-sm text-orange-500 animate-pulse">$GOODRUDI</p>
+              <p className="text-sm text-blue-500 animate-pulse">$GOODRUDI</p>
             </div>
           </div>
           <div
@@ -84,7 +84,7 @@ export default function HomePage() {
             <Badge variant="outline" className="border-blue-500 text-blue-600 hover:bg-blue-50 transition-colors">
               Base Network
             </Badge>
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white transform hover:scale-105 transition-all duration-200 hover:shadow-lg">
+            <Button className="bg-blue-500 hover:bg-blue-600 text-white transform hover:scale-105 transition-all duration-200 hover:shadow-lg">
               Buy Now
             </Button>
           </div>
@@ -97,7 +97,7 @@ export default function HomePage() {
           className="absolute inset-0 opacity-10"
           style={{
             transform: `translateY(${scrollY * 0.5}px)`,
-            backgroundImage: "radial-gradient(circle, orange 1px, transparent 1px)",
+            backgroundImage: "radial-gradient(circle, blue 1px, transparent 1px)",
             backgroundSize: "50px 50px",
           }}
         />
@@ -105,7 +105,7 @@ export default function HomePage() {
         <div className="container mx-auto text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <AnimatedSection animation="fadeInUp">
-              <h2 className="text-5xl md:text-7xl font-bold text-orange-600 mb-6 bg-gradient-to-r from-orange-500 to-orange-700 bg-clip-text text-transparent">
+              <h2 className="text-5xl md:text-7xl font-bold text-blue-600 mb-6 bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
                 Meet Rudi
               </h2>
             </AnimatedSection>
@@ -120,7 +120,7 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
               <AnimatedSection animation="fadeInLeft" delay={400}>
                 <div className="relative group">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-orange-400 to-orange-600 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur"></div>
+                  <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur"></div>
                   <Image
                     src="/images/rudi-car.jpg"
                     alt="Rudi driving to success"
@@ -133,7 +133,7 @@ export default function HomePage() {
 
               <AnimatedSection animation="fadeInRight" delay={600}>
                 <div className="text-left space-y-6">
-                  <h3 className="text-3xl font-bold text-orange-600">Ready to Mine & Ride?</h3>
+                  <h3 className="text-3xl font-bold text-blue-600">Ready to Mine & Ride?</h3>
                   <p className="text-lg text-gray-600">
                     Rudi isn't just another meme token - he's your guide to the Based ecosystem! Start mining free
                     $GOODRUDI tokens every 24 hours while Rudi drives the community towards financial freedom on Base
@@ -142,7 +142,7 @@ export default function HomePage() {
                   <div className="flex flex-wrap gap-4">
                     <Button
                       size="lg"
-                      className="bg-orange-500 hover:bg-orange-600 text-white transform hover:scale-105 transition-all duration-200 hover:shadow-lg group"
+                      className="bg-blue-500 hover:bg-blue-600 text-white transform hover:scale-105 transition-all duration-200 hover:shadow-lg group"
                     >
                       <TrendingUp className="mr-2 h-5 w-5 group-hover:animate-bounce" />
                       Chart
@@ -150,7 +150,7 @@ export default function HomePage() {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="border-orange-500 text-orange-600 hover:bg-orange-50 bg-transparent transform hover:scale-105 transition-all duration-200 group"
+                      className="border-blue-500 text-blue-600 hover:bg-blue-50 bg-transparent transform hover:scale-105 transition-all duration-200 group"
                     >
                       <Users className="mr-2 h-5 w-5 group-hover:animate-pulse" />
                       Community
@@ -165,7 +165,7 @@ export default function HomePage() {
                 variant="ghost"
                 size="lg"
                 onClick={() => scrollToSection("features")}
-                className="text-orange-600 hover:text-orange-700 animate-bounce"
+                className="text-blue-600 hover:text-blue-700 animate-bounce"
               >
                 <ChevronDown className="h-8 w-8" />
               </Button>
@@ -178,41 +178,41 @@ export default function HomePage() {
       <section id="features" className="py-16 px-4 bg-white">
         <div className="container mx-auto">
           <AnimatedSection animation="fadeInUp">
-            <h3 className="text-4xl font-bold text-center text-orange-600 mb-12">Why Choose Rudi?</h3>
+            <h3 className="text-4xl font-bold text-center text-blue-600 mb-12">Why Choose Rudi?</h3>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
             <AnimatedSection animation="fadeInUp" delay={0}>
-              <Card className="border-orange-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <Card className="border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors duration-300">
-                    <Zap className="h-8 w-8 text-orange-500 group-hover:animate-pulse" />
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors duration-300">
+                    <Zap className="h-8 w-8 text-blue-500 group-hover:animate-pulse" />
                   </div>
-                  <h4 className="text-xl font-bold text-orange-600 mb-2">Based Network</h4>
+                  <h4 className="text-xl font-bold text-blue-600 mb-2">Based Network</h4>
                   <p className="text-gray-600">Built on Base for lightning-fast transactions and low fees</p>
                 </CardContent>
               </Card>
             </AnimatedSection>
 
             <AnimatedSection animation="fadeInUp" delay={200}>
-              <Card className="border-orange-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <Card className="border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors duration-300">
-                    <Users className="h-8 w-8 text-orange-500 group-hover:animate-pulse" />
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors duration-300">
+                    <Users className="h-8 w-8 text-blue-500 group-hover:animate-pulse" />
                   </div>
-                  <h4 className="text-xl font-bold text-orange-600 mb-2">Strong Community</h4>
+                  <h4 className="text-xl font-bold text-blue-600 mb-2">Strong Community</h4>
                   <p className="text-gray-600">Join thousands of Rudi believers building the future together</p>
                 </CardContent>
               </Card>
             </AnimatedSection>
 
             <AnimatedSection animation="fadeInUp" delay={400}>
-              <Card className="border-orange-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <Card className="border-blue-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors duration-300">
-                    <Shield className="h-8 w-8 text-orange-500 group-hover:animate-pulse" />
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors duration-300">
+                    <Shield className="h-8 w-8 text-blue-500 group-hover:animate-pulse" />
                   </div>
-                  <h4 className="text-xl font-bold text-orange-600 mb-2">Safe & Secure</h4>
+                  <h4 className="text-xl font-bold text-blue-600 mb-2">Safe & Secure</h4>
                   <p className="text-gray-600">Audited smart contract with locked liquidity for peace of mind</p>
                 </CardContent>
               </Card>
@@ -225,10 +225,10 @@ export default function HomePage() {
       <MiningSection />
 
       {/* Gallery Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-orange-50 to-orange-100">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-50 to-blue-100">
         <div className="container mx-auto">
           <AnimatedSection animation="fadeInUp">
-            <h3 className="text-4xl font-bold text-center text-orange-600 mb-12">Rudi's Adventures</h3>
+            <h3 className="text-4xl font-bold text-center text-blue-600 mb-12">Rudi's Adventures</h3>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -297,34 +297,34 @@ export default function HomePage() {
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto text-center">
           <AnimatedSection animation="fadeInUp">
-            <h3 className="text-4xl font-bold text-orange-600 mb-8">Contract Address</h3>
+            <h3 className="text-4xl font-bold text-blue-600 mb-8">Contract Address</h3>
           </AnimatedSection>
 
           <AnimatedSection animation="scaleIn" delay={200}>
-            <Card className="max-w-2xl mx-auto border-orange-200 hover:shadow-xl transition-all duration-300">
+            <Card className="max-w-2xl mx-auto border-blue-200 hover:shadow-xl transition-all duration-300">
               <CardContent className="p-6">
-                <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-lg p-8 text-center">
+                <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-8 text-center">
                   <div className="text-6xl mb-4">🚀</div>
-                  <h4 className="text-3xl font-bold text-orange-600 mb-4">Coming Soon!</h4>
+                  <h4 className="text-3xl font-bold text-blue-600 mb-4">Coming Soon!</h4>
                   <p className="text-lg text-gray-600 mb-6">
                     The $GOODRUDI contract is being finalized and will be deployed on Base Network soon.
                   </p>
                   <div className="flex justify-center space-x-2 mb-4">
-                    <div className="w-3 h-3 bg-orange-400 rounded-full animate-bounce"></div>
+                    <div className="w-3 h-3 bg-blue-400 rounded-full animate-bounce"></div>
                     <div
-                      className="w-3 h-3 bg-orange-400 rounded-full animate-bounce"
+                      className="w-3 h-3 bg-blue-400 rounded-full animate-bounce"
                       style={{ animationDelay: "0.1s" }}
                     ></div>
                     <div
-                      className="w-3 h-3 bg-orange-400 rounded-full animate-bounce"
+                      className="w-3 h-3 bg-blue-400 rounded-full animate-bounce"
                       style={{ animationDelay: "0.2s" }}
                     ></div>
                   </div>
-                  <p className="text-sm text-orange-500 font-semibold">Stay tuned for the official launch!</p>
+                  <p className="text-sm text-blue-500 font-semibold">Stay tuned for the official launch!</p>
                 </div>
                 <div className="flex justify-center space-x-4 mt-6">
                   <Button
-                    className="bg-orange-500 hover:bg-orange-600 text-white transform hover:scale-105 transition-all duration-200 hover:shadow-lg group"
+                    className="bg-blue-500 hover:bg-blue-600 text-white transform hover:scale-105 transition-all duration-200 hover:shadow-lg group"
                     disabled
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
@@ -346,7 +346,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-orange-600 to-orange-700 text-white py-12 px-4">
+      <footer className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-12 px-4">
         <div className="container mx-auto text-center">
           <AnimatedSection animation="fadeInUp">
             <div className="flex items-center justify-center space-x-3 mb-6">
@@ -365,7 +365,7 @@ export default function HomePage() {
           </AnimatedSection>
 
           <AnimatedSection animation="fadeInUp" delay={200}>
-            <p className="text-orange-100 mb-6">
+            <p className="text-blue-100 mb-6">
               Join Rudi on his journey to revolutionize the Base ecosystem - Mine free tokens daily!
             </p>
           </AnimatedSection>
@@ -374,13 +374,13 @@ export default function HomePage() {
             <div className="flex justify-center space-x-6">
               <Button
                 variant="ghost"
-                className="text-white hover:bg-orange-700 transform hover:scale-105 transition-all duration-200"
+                className="text-white hover:bg-blue-700 transform hover:scale-105 transition-all duration-200"
               >
                 Twitter
               </Button>
               <Button
                 variant="ghost"
-                className="text-white hover:bg-orange-700 transform hover:scale-105 transition-all duration-200"
+                className="text-white hover:bg-blue-700 transform hover:scale-105 transition-all duration-200"
               >
                 Telegram
               </Button>
@@ -388,8 +388,8 @@ export default function HomePage() {
           </AnimatedSection>
 
           <AnimatedSection animation="fadeInUp" delay={600}>
-            <div className="mt-8 pt-8 border-t border-orange-500">
-              <p className="text-orange-200 text-sm">
+            <div className="mt-8 pt-8 border-t border-blue-500">
+              <p className="text-blue-200 text-sm">
                 © 2025 Based Good Rudi. Built on Base Network.
                 <br />
                 <span className="text-xs">This is a meme token for entertainment purposes. Always DYOR.</span>

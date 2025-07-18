@@ -20,7 +20,7 @@ export function FloatingElements() {
       {[...Array(6)].map((_, i) => (
         <div
           key={i}
-          className="absolute w-8 h-8 bg-orange-400 rounded-full opacity-20 animate-bounce"
+          className="absolute w-8 h-8 bg-blue-400 rounded-full opacity-20 animate-bounce"
           style={{
             left: `${10 + i * 15}%`,
             top: `${20 + (i % 3) * 30}%`,

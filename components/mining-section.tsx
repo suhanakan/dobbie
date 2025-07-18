@@ -47,7 +47,7 @@ export function MiningSection() {
 
   if (!isLoaded) {
     return (
-      <section className="py-16 px-4 bg-gradient-to-r from-orange-100 to-yellow-100">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-100 to-cyan-100">
         <div className="container mx-auto text-center">
           <div className="animate-pulse">Loading mining data...</div>
         </div>
@@ -56,7 +56,7 @@ export function MiningSection() {
   }
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-r from-orange-100 to-yellow-100 relative overflow-hidden">
+    <section className="py-16 px-4 bg-gradient-to-r from-blue-100 to-cyan-100 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 opacity-10">
         {[...Array(8)].map((_, i) => (
@@ -78,7 +78,7 @@ export function MiningSection() {
       <div className="container mx-auto relative z-10">
         <AnimatedSection animation="fadeInUp">
           <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold text-orange-600 mb-4">Mine $GOODRUDI</h3>
+            <h3 className="text-4xl font-bold text-blue-600 mb-4">Mine $GOODRUDI</h3>
             <p className="text-lg text-gray-700">Earn free tokens every 24 hours by mining with Rudi!</p>
           </div>
         </AnimatedSection>
@@ -86,9 +86,9 @@ export function MiningSection() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Mining Card */}
           <AnimatedSection animation="fadeInLeft">
-            <Card className="border-orange-200 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+            <Card className="border-blue-200 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
               <CardHeader className="text-center pb-4">
-                <CardTitle className="flex items-center justify-center space-x-2 text-orange-600">
+                <CardTitle className="flex items-center justify-center space-x-2 text-blue-600">
                   <Pickaxe className="h-6 w-6" />
                   <span>Mining Station</span>
                 </CardTitle>
@@ -102,7 +102,7 @@ export function MiningSection() {
                     size="lg"
                     className={`w-full h-16 text-lg font-bold transition-all duration-300 ${
                       canMine && !isMining
-                        ? "bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white shadow-lg hover:shadow-xl transform hover:scale-105"
+                        ? "bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white shadow-lg hover:shadow-xl transform hover:scale-105"
                         : "bg-gray-300 text-gray-500 cursor-not-allowed"
                     } ${isMining ? "animate-pulse" : ""}`}
                   >
@@ -137,8 +137,8 @@ export function MiningSection() {
 
                 {/* Countdown Timer */}
                 {!canMine && (
-                  <div className="bg-orange-50 rounded-lg p-4">
-                    <div className="flex items-center justify-center space-x-2 text-orange-600">
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <div className="flex items-center justify-center space-x-2 text-blue-600">
                       <Timer className="h-5 w-5" />
                       <span className="font-mono text-xl">{formatTimeRemaining(timeUntilNextMining)}</span>
                     </div>
@@ -158,42 +158,42 @@ export function MiningSection() {
 
           {/* Stats Card */}
           <AnimatedSection animation="fadeInRight" delay={200}>
-            <Card className="border-orange-200 hover:shadow-xl transition-all duration-300">
+            <Card className="border-blue-200 hover:shadow-xl transition-all duration-300">
               <CardHeader className="text-center pb-4">
-                <CardTitle className="flex items-center justify-center space-x-2 text-orange-600">
+                <CardTitle className="flex items-center justify-center space-x-2 text-blue-600">
                   <TrendingUp className="h-6 w-6" />
                   <span>Mining Stats</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 {/* Current Balance */}
-                <div className="text-center bg-gradient-to-r from-orange-50 to-yellow-50 rounded-lg p-4">
+                <div className="text-center bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-4">
                   <div className="flex items-center justify-center space-x-2 mb-2">
-                    <Coins className="h-6 w-6 text-orange-500" />
+                    <Coins className="h-6 w-6 text-blue-500" />
                     <span className="text-lg font-semibold text-gray-700">Current Balance</span>
                   </div>
-                  <div className="text-3xl font-bold text-orange-600">{balance.toLocaleString()} $GOODRUDI</div>
+                  <div className="text-3xl font-bold text-blue-600">{balance.toLocaleString()} $GOODRUDI</div>
                 </div>
 
                 {/* Mining Statistics */}
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center bg-orange-50 rounded-lg p-3">
-                    <div className="text-2xl font-bold text-orange-600">{totalMined.toLocaleString()}</div>
+                  <div className="text-center bg-blue-50 rounded-lg p-3">
+                    <div className="text-2xl font-bold text-blue-600">{totalMined.toLocaleString()}</div>
                     <div className="text-sm text-gray-600">Total Mined</div>
                   </div>
-                  <div className="text-center bg-yellow-50 rounded-lg p-3">
-                    <div className="text-2xl font-bold text-yellow-600">{miningCount}</div>
+                  <div className="text-center bg-cyan-50 rounded-lg p-3">
+                    <div className="text-2xl font-bold text-cyan-600">{miningCount}</div>
                     <div className="text-sm text-gray-600">Mining Sessions</div>
                   </div>
                 </div>
 
                 {/* Reward Info */}
-                <div className="bg-gradient-to-r from-orange-100 to-yellow-100 rounded-lg p-4">
+                <div className="bg-gradient-to-r from-blue-100 to-cyan-100 rounded-lg p-4">
                   <div className="flex items-center space-x-2 mb-2">
-                    <Zap className="h-5 w-5 text-orange-500" />
+                    <Zap className="h-5 w-5 text-blue-500" />
                     <span className="font-semibold text-gray-700">Mining Reward</span>
                   </div>
-                  <div className="text-lg font-bold text-orange-600">
+                  <div className="text-lg font-bold text-blue-600">
                     {MINING_REWARD.toLocaleString()} $GOODRUDI per 24h
                   </div>
                   <p className="text-sm text-gray-600 mt-1">Mine once every 24 hours to earn free tokens!</p>
@@ -206,24 +206,24 @@ export function MiningSection() {
         {/* Mining Tips */}
         <AnimatedSection animation="fadeInUp" delay={400}>
           <div className="mt-12 text-center">
-            <Card className="max-w-2xl mx-auto border-orange-200 bg-gradient-to-r from-orange-50 to-yellow-50">
+            <Card className="max-w-2xl mx-auto border-blue-200 bg-gradient-to-r from-blue-50 to-cyan-50">
               <CardContent className="p-6">
-                <h4 className="text-xl font-bold text-orange-600 mb-4">🎯 Mining Tips</h4>
+                <h4 className="text-xl font-bold text-blue-600 mb-4">🎯 Mining Tips</h4>
                 <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
                   <div className="flex items-start space-x-2">
-                    <span className="text-orange-500">•</span>
+                    <span className="text-blue-500">•</span>
                     <span>Mine every 24 hours to maximize rewards</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <span className="text-orange-500">•</span>
+                    <span className="text-blue-500">•</span>
                     <span>Set a daily reminder to never miss mining</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <span className="text-orange-500">•</span>
+                    <span className="text-blue-500">•</span>
                     <span>Share with friends to build the community</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <span className="text-orange-500">•</span>
+                    <span className="text-blue-500">•</span>
                     <span>Hold your tokens for potential future rewards</span>
                   </div>
                 </div>

@@ -54,7 +54,7 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 transition-all duration-800 ${
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 transition-all duration-800 ${
         isExiting ? "opacity-0 scale-110" : "opacity-100 scale-100"
       }`}
     >
@@ -64,7 +64,7 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
         {[...Array(12)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-4 h-4 bg-yellow-300 rounded-full opacity-30 animate-bounce"
+            className="absolute w-4 h-4 bg-cyan-300 rounded-full opacity-30 animate-bounce"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -100,8 +100,8 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
         >
           <div className="relative">
             {/* Glowing ring around logo */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-orange-300 rounded-full opacity-50 animate-ping"></div>
-            <div className="absolute -inset-2 bg-gradient-to-r from-orange-300 to-orange-400 rounded-full opacity-70 animate-pulse"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400 to-blue-300 rounded-full opacity-50 animate-ping"></div>
+            <div className="absolute -inset-2 bg-gradient-to-r from-blue-300 to-blue-400 rounded-full opacity-70 animate-pulse"></div>
 
             {/* Logo */}
             <div className="relative bg-white p-4 rounded-full shadow-2xl">
@@ -126,8 +126,8 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
           }`}
         >
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 animate-pulse">Based Good Rudi</h1>
-          <p className="text-xl text-orange-100 mb-4">$GOODRUDI</p>
-          <p className="text-orange-200 animate-bounce">Loading the future...</p>
+          <p className="text-xl text-blue-100 mb-4">$GOODRUDI</p>
+          <p className="text-blue-200 animate-bounce">Loading the future...</p>
         </div>
 
         {/* Progress bar */}
@@ -136,9 +136,9 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
             showText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <div className="bg-orange-800/30 rounded-full h-3 mb-4 overflow-hidden backdrop-blur-sm">
+          <div className="bg-blue-800/30 rounded-full h-3 mb-4 overflow-hidden backdrop-blur-sm">
             <div
-              className="bg-gradient-to-r from-yellow-400 to-orange-300 h-full rounded-full transition-all duration-300 ease-out relative"
+              className="bg-gradient-to-r from-cyan-400 to-blue-300 h-full rounded-full transition-all duration-300 ease-out relative"
               style={{ width: `${progress}%` }}
             >
               {/* Shimmer effect */}
@@ -147,7 +147,7 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
           </div>
 
           {/* Progress text with dynamic messages */}
-          <div className="flex justify-between text-orange-200 text-sm">
+          <div className="flex justify-between text-blue-200 text-sm">
             <span>
               {progress < 20 && "Initializing Rudi..."}
               {progress >= 20 && progress < 40 && "Loading Base Network..."}
