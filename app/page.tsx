@@ -9,6 +9,7 @@ import { Copy, ExternalLink, TrendingUp, Users, Zap, Shield, ChevronDown, Rocket
 import { AnimatedSection } from "@/components/animated-section"
 import { FloatingElements } from "@/components/floating-elements"
 import { LoadingScreen } from "@/components/loading-screen"
+import { MiningSection } from "@/components/mining-section"
 
 export default function HomePage() {
   const [copied, setCopied] = useState(false)
@@ -215,6 +216,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Mining Section */}
+      <MiningSection />
 
       {/* Gallery Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-orange-50 to-orange-100">
